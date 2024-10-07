@@ -77,7 +77,7 @@ async function waitForRunnerRegistered(label) {
         resolve();
       } else {
         waitSeconds += retryIntervalSeconds;
-        core.info(`Checking... Total time waited is ${(waitSeconds / 60).toFixed(2)} minutes`);
+        core.info(`Checking... Total time waited is ${(waitSeconds / 60).toFixed(1)} minutes`);
       }
     }, retryIntervalSeconds * 1000);
   });
